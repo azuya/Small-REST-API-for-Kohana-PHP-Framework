@@ -42,6 +42,6 @@ API access-key is static now - 737.
 
 Data in JSON format.
 
-* All items of Database - url - /api/<key>/
-* Get one item - url - /api/<key>/get/<id>
-* Change status "active/deactive" - url - /api/<key>/active/<id> 
+* All items of Database - url - /api/#key/
+* Get one item - url - /api/#key/get/#id
+* Change status "active/deactive" - url - /api/#key/active/#id
