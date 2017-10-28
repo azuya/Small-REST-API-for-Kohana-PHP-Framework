@@ -11,7 +11,7 @@ Made for v3.3.6
 4. Add View(v_index.php)  to  folder application/views
 5. Add database config(database.php)  to  folder application/config
 6. Edit bootstrap.php:
-
+```
 Kohana::init(array(
 	'base_url'   => '/kohana/',
     'index_file' => false,
@@ -19,6 +19,7 @@ Kohana::init(array(
 
 
 Kohana::modules(array(
+...
 	'database'   => MODPATH.'database',   // Database access
 	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 ));
@@ -34,13 +35,13 @@ Route::set('default', '(<controller>(/<action>(/<id>)))')
 		'controller' => 'index',
 		'action'     => 'index',
 	));
-	
+```	
 ## Usage
 
 API access-key is static now - 737.
 
 Data in JSON format.
 
-All items of Database - url - /api/<key>/
-Get one item - url - /api/<key>/get/<id>
-Change status "active/deactive" - url - /api/<key>/active/<id> 
+* All items of Database - url - /api/<key>/
+* Get one item - url - /api/<key>/get/<id>
+* Change status "active/deactive" - url - /api/<key>/active/<id> 
